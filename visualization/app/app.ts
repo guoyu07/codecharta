@@ -11,6 +11,8 @@ import "font-awesome/css/font-awesome.css";
 
 import "./codeCharta/codeCharta";
 
+declare function $(arg: any): any;
+
 angular.module("app", ["app.codeCharta"]);
 
 angular.module("app").config(["$locationProvider", function($locationProvider) {
@@ -20,3 +22,7 @@ angular.module("app").config(["$locationProvider", function($locationProvider) {
         requireBase: false
     });
 }]);
+
+$(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 50});
+});

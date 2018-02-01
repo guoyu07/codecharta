@@ -67,9 +67,12 @@ Object {
       
     
       <select
-        class="browser-default ng-pristine ng-untouched ng-valid ng-empty"
+        class="browser-default tooltipped ng-pristine ng-untouched ng-valid ng-empty"
+        data-position="bottom"
+        data-tooltip="no description"
         id="dropdown-directive-13"
         ng-model="ctrl.model"
+        title="no description"
       >
         <option
           selected="selected"
